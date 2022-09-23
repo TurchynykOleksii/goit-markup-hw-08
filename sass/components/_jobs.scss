@@ -1,0 +1,148 @@
+.jobs__wokrs {
+  display: none;
+}
+
+.jobs__filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+
+  @media screen and (min-width: 320px) {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+
+.jobs__btn {
+  padding: 6px 22px;
+  font-family: $font-roboto;
+  font-weight: 500;
+  text-align: center;
+  background-color: $grey-color-btn;
+  border: none;
+  border-radius: 4px;
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+
+.jobs__cards {
+  display: flex;
+
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 320px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+}
+
+.jobs__card {
+  max-width: 370px;
+  width: 100%;
+}
+
+.jobs__card {
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+.jobs__card {
+  a {
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+}
+
+.jobs__card {
+  a {
+
+    &:hover,
+    &:focus {
+      .jobs__img-text {
+        transform: translateY(0);
+      }
+    }
+  }
+
+}
+
+.jobs__img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.jobs__img-text {
+  padding: 63px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jobs__container-text {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.jobs__headline {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $black-color;
+  line-height: 1.99;
+  letter-spacing: 0.06em;
+}
+
+.jobs__subline {
+  color: $grey-color;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+}

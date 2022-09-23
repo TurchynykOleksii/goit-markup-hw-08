@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- header-->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a href="#" class="header__logo"> <span class="accent-text">Web</span>Studio </a>
+          <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg width="24" height="16" aria-label="переключатель мобільного меню">
+              <use class="icon__crose" href="./images/icons.svg#close"></use>
+              <use class="icon__menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="mobile__menu">
+            <button type="button" class="list-button" aria-expanded="false" data-close-button>
+              <svg
+                class="list__button-icon"
+                width="24"
+                height="16"
+                aria-label="переключатель мобільного меню"
+              >
+                <use class="icon__crose" href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="mobile__list">
+              <li class="mobile__item">
+                <a class="mobile__link" href="index.html ">Студія</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link" href="#">Контакти</a>
+              </li>
+            </ul>
+            <div class="mobile__contacts">
+              <ul class="mobile_phone-email">
+                <li class="mobile__phone">
+                  <a class="mobile__phone-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__email">
+                  <a class="mobile__email-link" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mobile__social">
+                <li class="mobile__social-item">
+                  <a class="mobile__social-link" href="#">Instagram</a>
+                </li>
+                <li class="mobile__social-item">
+                  <a class="mobile__social-link" href="#">Twitter</a>
+                </li>
+                <li class="mobile__social-item">
+                  <a class="mobile__social-link" href="#">Facebook</a>
+                </li>
+                <li class="mobile__social-item">
+                  <a class="mobile__social-link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="index.html ">Студія</a>
+            </li>
+            <li class="header__item header-active">
+              <a class="header__link" href="portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contacts">
+          <li class="header__email">
+            <a href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="header__phone">
+            <a href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="jobs">
+      <section class="jobs__section section">
+        <div class="container">
+          <h1 class="jobs__wokrs">Наші роботи</h1>
+          <ul class="jobs__filter">
+            <li class="jobs__item">
+              <button class="jobs__btn" type="button">Усі</button>
+            </li>
+            <li class="jobs__item">
+              <button class="jobs__btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="jobs__item">
+              <button class="jobs__btn" type="button">Додатки</button>
+            </li>
+            <li class="jobs__item">
+              <button class="jobs__btn" type="button">Дизайн</button>
+            </li>
+            <li class="jobs__item">
+              <button class="jobs__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="jobs__cards">
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/technokryak.jpg"
+                    alt="Технокряк картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Технокряк</h2>
+                  <p class="jobs__subline">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/new-orlean.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Постер New Orlean vs Golden Star</h2>
+                  <p class="jobs__subline">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/seafood.jpg"
+                    alt="Ресторан Seafood картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Ресторан Seafood</h2>
+                  <p class="jobs__subline">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/prime.jpg"
+                    alt="Проєкт Prime картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Проєкт Prime</h2>
+                  <p class="jobs__subline">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/boxes.jpg"
+                    alt="Проєкт Boxes картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Проєкт Boxes</h2>
+                  <p class="jobs__subline">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/inspiration.jpg"
+                    alt="Inspiration has no Borders картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Inspiration has no Borders</h2>
+                  <p class="jobs__subline">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/limited.jpg"
+                    alt="Видання Limited Edition картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Видання Limited Edition</h2>
+                  <p class="jobs__subline">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/lab.jpg"
+                    alt="Проєкт LAB картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Проєкт LAB</h2>
+                  <p class="jobs__subline">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="jobs__card">
+              <a href="#">
+                <div class="jobs__img-container">
+                  <img
+                    src="images/business.jpg"
+                    alt="Growing Business картинка"
+                    width="370"
+                    class="jobs__img"
+                  />
+                  <p class="jobs__img-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="jobs__container-text">
+                  <h2 class="jobs__headline">Growing Business</h2>
+                  <p class="jobs__subline">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__adress">
+          <div class="footer__social-container">
+            <div class="footer__adress-wrapper">
+              <a href="#" class="footer__logo">
+                <span class="logo__accent-text">Web</span>Studio
+              </a>
+              <address class="footer__address">
+                <ul class="footer__address-list">
+                  <li class="footer__adress-item">
+                    <a href="#">м. Київ, пр-т Лесі Українки, 26</a>
+                  </li>
+                  <li class="footer__adress-item footer__adress_item-grey">
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="footer__adress-item footer__adress_item-grey">
+                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer__adress-container">
+              <p class="footer__social-text">приєднуйтесь</p>
+              <ul class="team__social footer__social">
+                <li class="team__link">
+                  <a href="#" class="team__link-tag">
+                    <svg class="team__svg footer__svg">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__link">
+                  <a href="#" class="team__link-tag">
+                    <svg class="team__svg footer__svg">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__link">
+                  <a href="#" class="team__link-tag">
+                    <svg class="team__svg footer__svg">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__link">
+                  <a href="#" class="team__link-tag">
+                    <svg class="team__svg footer__svg">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form action="#" class="footer__form">
+            <p class="footer__form-headline">Підпишіться на розсилку</p>
+            <div class="footer__form-group">
+              <input class="footer__form-email" type="email" name="email" placeholder="E-mail" />
+              <button type="submit" class="decision_btn footer_form-btn">
+                Підписатися
+
+                <svg width="24" height="24" fill="black">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
