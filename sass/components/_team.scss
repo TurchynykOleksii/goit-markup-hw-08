@@ -31,13 +31,11 @@
 }
 
 .team__list-item img {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     width: 100%;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: auto;
-  }
+
 }
 
 .team__item-headline {
@@ -124,4 +122,9 @@
 .team__group {
   padding: 24px 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+
+  }
 }
