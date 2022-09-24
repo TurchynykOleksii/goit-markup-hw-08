@@ -161,8 +161,27 @@ li {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1200px;
   width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 img {
@@ -512,7 +531,7 @@ img {
 
 @media (min-resolution: 2dppx) {
   .decision {
-    background-image: url("../images/@2x/header_bg.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/@2x/header_bg.jpg");
   }
 }
 .decision__headline {
@@ -594,7 +613,6 @@ img {
 .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -687,6 +705,7 @@ img {
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.1;
   text-transform: uppercase;
@@ -709,6 +728,7 @@ img {
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -1181,7 +1201,7 @@ img {
 }
 @media screen and (min-width: 320px) {
   .modal {
-    max-width: 95%;
+    max-width: 98%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1248,9 +1268,14 @@ img {
   font-size: 14px;
   color: #757575;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .form__link-terms {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__link-terms {
+    font-size: 14px;
   }
 }
 
